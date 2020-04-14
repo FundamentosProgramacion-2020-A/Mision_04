@@ -18,19 +18,21 @@ def main ():
         else:
             if (ladoC + ladoA) < ladoB:
                 print ("Estos lados no corresponden a un triángulo")
-
-# Condicionante para  ver que tipo de triángulo es
-        
-    if ladoA == ladoB == ladoC:
-            print ("Es un triángulo Equiilátero") 
-    else:
-        if ladoA == ladoB:              
-            print ("Es un triángulo Isóceles")
-        else:
-            if ladoB == ladoC:
-                print ("Es un triángulo Isóceles")
-            else:    
-                print ("Es otro tipo de triángulo")
+            else:                                                       # Condicionante para  ver que tipo de triángulo es
+                if ladoA == ladoB and ladoB == ladoC:
+                    print ("Es un triángulo Equiilátero")
+                else:
+                    if ladoA == ladoB:
+                        print ("Es un triángulo Isóceles")
+                    else:
+                        if ladoB == ladoC:
+                            print ("Es un triángulo Isóceles")
+                        else:
+                            if ladoC == ladoA:
+                                print ("Es un triángulo Isóceles")
+                            else:
+                                print ("Es otro tipo de triángulo")
+                
 
             
 main()

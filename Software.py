@@ -47,11 +47,11 @@ def main ():
     
     #Condicionante
     
-    if paquetes < 0:
+    if paquetes <= 0:
         print ("ERROR")
     else:
-        print ("La cantidad descontada es: %d" % (descuentoFinal))
-        print ("El total a pagar es de: %d " % (totalFinal))
+        print ("La cantidad descontada es: %.02f" % (descuentoFinal))
+        print ("El total a pagar es de: $%.02f " % (totalFinal))
     
 
     
