@@ -16,20 +16,17 @@ def main():
     aa = int(input("Dame el primer lado del triangulo "))
     bb = int(input("Dame el segundo lado del triangulo "))
     cc = int(input("Dame el tercer lado del triangulo "))
-    q = aa + bb
-    w = aa + cc
-    e = bb + cc
   
 # si existe el triangulo 
-    if q > cc:
+    if aa+bb>cc:
         t = tipodetriangulo (aa,bb,cc)
         print (t)
     else:
-        if e > aa:
+        if aa+bb>cc:
              t = tipodetriangulo (aa,bb,cc)
              print (t)
         else:
-            if w > bb:
+            if cc+aa>bb:
                 t = tipodetriangulo (aa,bb,cc)
                 print (t)
             else:
