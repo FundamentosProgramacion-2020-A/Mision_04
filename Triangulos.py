@@ -2,9 +2,9 @@
 #Leer los valores de cada lado de un triángulo, emitir mensaje correpondiente
 
 def esTriangulo(a,b,c):
-    if a + b > c or b + c > a or a + c > b:
-        return True
-    return False
+    if a + b < c or b + c < a or a + c < b:
+        return False
+    return True
 
 def esEquilatero(a,b,c):
     if a == b == c:
