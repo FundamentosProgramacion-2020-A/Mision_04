@@ -45,18 +45,18 @@ def main ():
         error = "La cantidad de compra de paquetes es errónea"
         print (error)
     
-    
-    descuento = descontarPaquetes (paquetesVendidos)
-    print ("El porcentaje de descuento es de", (descuento))
-    
-    subtotal = calcularSubtotal (paquetesVendidos)
-    print ("El subtotal es de $", (subtotal))
-    
-    descuentoPaquetes = calcularDescuento (paquetesVendidos, descuento)
-    print ("El descuento es de", (descuentoPaquetes))
-    
-    totalPagar = calcularTotal (paquetesVendidos, descuento)
-    print ("El total a pagar es $", (totalPagar))
+    else:
+        descuento = descontarPaquetes (paquetesVendidos)
+        print ("El porcentaje de descuento es de", (descuento))
+        
+        subtotal = calcularSubtotal (paquetesVendidos)
+        print ("El subtotal es de $", (subtotal))
+        
+        descuentoPaquetes = calcularDescuento (paquetesVendidos, descuento)
+        print ("El descuento es de $", (descuentoPaquetes))
+        
+        totalPagar = calcularTotal (paquetesVendidos, descuento)
+        print ("El total a pagar es $", (totalPagar))
     
 
 
